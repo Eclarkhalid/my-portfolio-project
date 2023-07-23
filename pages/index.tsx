@@ -81,7 +81,7 @@ const Home = () => {
                 </CardTitle>
                 <CardDescription>
                   <p className="text-xl mx-auto max-w-md text-center">
-                    I'm Eclar Khalid a Front-end Web Developer / Back-end Developer
+                    I am Eclar Khalid a Front-end Web Developer / Back-end Developer
                   </p>
                 </CardDescription>
               </CardHeader>
