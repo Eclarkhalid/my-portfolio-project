@@ -21,7 +21,7 @@ const Home = () => {
   const [showMenu, setShowMenu] = useState();
   return (
     <>
-      <header className=" py-3 lg:px-52  px-12 bg-white shadow sticky">
+      <header className=" py-3 lg:px-52  px-12 bg-white shadow sticky top-0 left-0 right-0">
         <div className="container-xxl">
           <div className="flex justify-between items-center">
             <div className="logo">
@@ -47,7 +47,7 @@ const Home = () => {
           <Card className=" justify-center items-center text-center border-0 bg-gradient-to-b from-teal-200">
             <CardHeader>
               <div className="mx-auto rounded-full w-80 h-80 relative overflow-hidden my-14">
-                <Image src={img} alt={"image"} layout="fill" objectFit="cover" />
+                <Image src={img} alt={"image"} layout="fill" objectFit="cover"  />
               </div>
               <CardTitle>
                 <h1 className="leading-8 font-bold text-4xl">Eclar <span className="text-blue-600">Khalid</span>
