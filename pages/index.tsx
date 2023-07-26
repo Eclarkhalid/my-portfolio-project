@@ -27,14 +27,14 @@ const Home = () => {
             <div className="logo">
               <Avatar className="font-bold text-2xl items-center">E<span className=" text-blue-600 font-extrabold">K</span></Avatar>
             </div>
-            <div className="social-links space-x-14 hidden lg:flex">
+            <div className="social-links space-x-14 hidden md:flex lg:flex">
               <Link className='text-xl uppercase' href={"#home"}>Home</Link>
               <Link className='text-xl uppercase' href={"#about"}>About</Link>
               <Link className='text-xl uppercase' href={"#projects"}>Projects</Link>
               <Link className='text-xl uppercase' href={"#contact"}>Contact</Link>
             </div>
             <div className="resume">
-              <Button>Hire Me</Button>
+              <Link href='https://www.fiverr.com/s/m6pko7' target='_blank'><Button>Hire Me</Button></Link>
             </div>
 
           </div>
