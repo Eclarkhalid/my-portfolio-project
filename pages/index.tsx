@@ -7,9 +7,10 @@ import Image from "next/image";
 import Link from "next/link";
 import img from './images/ek-logo.jpg'
 import img2 from './images/image2.png'
+import img3 from './images/techwave.png'
 import { AiFillGithub } from 'react-icons/ai'
 import { BsDiscord, BsTwitter, BsYoutube } from 'react-icons/bs'
-import { AiFillCheckCircle,AiFillMail } from 'react-icons/ai'
+import { AiFillCheckCircle, AiFillMail } from 'react-icons/ai'
 import { MdPending } from 'react-icons/md'
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { BiPhoneCall } from 'react-icons/bi'
@@ -47,7 +48,7 @@ const Home = () => {
           <Card className=" justify-center items-center text-center border-0 bg-gradient-to-b from-teal-200">
             <CardHeader>
               <div className="mx-auto rounded-full w-80 h-80 relative overflow-hidden my-14">
-                <Image src={img} alt={"image"} layout="fill" objectFit="cover"  />
+                <Image src={img} alt={"image"} layout="fill" objectFit="cover" />
               </div>
               <CardTitle>
                 <h1 className="leading-8 font-bold text-4xl">Eclar <span className="text-blue-600">Khalid</span>
@@ -61,10 +62,10 @@ const Home = () => {
               <p className="leading-8 text-xl max-w-sm mx-auto">Create the best web designs for your business with me.</p>
             </CardContent>
             <CardFooter className="flex justify-center items-center text-3xl opacity-60 space-x-8">
-              <Link className=" hover:text-blue-900" href={''} target="_blank"><AiFillGithub /></Link>
-              <Link className=" hover:text-blue-900" href={''}><BsDiscord /></Link>
-              <Link className=" hover:text-blue-900" href={''}><BsTwitter /></Link>
-              <Link className=" hover:text-blue-900" href={''}><BsYoutube /></Link>
+              <Link className=" hover:text-blue-900" href={'https://github.com/Eclarkhalid?tab=repositories'} target="_blank"><AiFillGithub /></Link>
+              <Link className=" hover:text-blue-900" href={'https://discord.gg/AYJR2GvE'} target="_blank"><BsDiscord /></Link>
+              <Link className=" hover:text-blue-900" href={'https://twitter.com/eclarkhalid'} target="_blank"><BsTwitter /></Link>
+              <Link className=" hover:text-blue-900" href={'https://www.youtube.com/@eclarkhalid/videos'} target="_blank"><BsYoutube /></Link>
             </CardFooter>
           </Card>
         </div>
@@ -86,11 +87,11 @@ const Home = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Tabs defaultValue="education" className="w-[400px] lg:w-[600px] p-10">
+                <Tabs defaultValue="education" className="w-full lg:w-[600px] p-10">
                   <TabsList className="lg:flex justify-between">
                     <TabsTrigger value="education">Education</TabsTrigger>
                     <TabsTrigger value="experience">Work Experience</TabsTrigger>
-                    <TabsTrigger value="skills">Skills</TabsTrigger>
+                    
                   </TabsList>
                   <TabsContent defaultValue={'education'} value="education">
                     <p className="leading-8 mx-auto max-w-lg">
@@ -102,18 +103,10 @@ const Home = () => {
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magnam nesciunt iste accusamus dolor nam quidem laudantium, alias aliquid eveniet illo, quaerat molestiae doloribus voluptate. Molestias veniam quam reiciendis suscipit.
                     </p>
                   </TabsContent>
-                  <TabsContent value="skills">
-                    <p className="leading-8 mx-auto max-w-lg">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magnam nesciunt iste accusamus dolor nam quidem laudantium, alias aliquid eveniet illo, quaerat molestiae doloribus voluptate. Molestias veniam quam reiciendis suscipit.
-                    </p>
-                  </TabsContent>
+                  
                 </Tabs>
-
-                <CardContent className="flex justify-center">
-                  <Button>Download Cv</Button>
-                </CardContent>
-
               </CardContent>
+
             </Card>
             <Card className="my-3">
               <CardHeader>
@@ -159,22 +152,22 @@ const Home = () => {
               <CardHeader>
                 <CardTitle>
                   <div className="flex justify-around">
-                    <h1 className="mb-2"> Name</h1>
+                    <h1 className="mb-2">Apneck</h1>
                     <AiFillCheckCircle className=" text-green-900" />
                   </div>
                 </CardTitle>
                 <CardDescription>
-                  Apneck Is An eccomerce website
+                  Apneck Is An eccomerce website only front-end application
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <Image src={img2} className="h-48 w-96 mb-3 object-cover" alt={""} />
                 <h1 className="text-xl ">Languages & Libraries</h1>
                 <div className="flex space-x-5 my-2 text-blue-600">
-                  <p>Next-Js</p>
                   <p>React</p>
-                  <p>Tailwind</p>
-                  <p>Mongo-Db</p>
+                  <p>Bootsrap-5</p>
+                  <p>React-router-dom</p>
+                  <p>React-icons</p>
                 </div>
               </CardContent>
               <CardFooter className="flex justify-around items-center">
@@ -199,36 +192,36 @@ const Home = () => {
               <CardHeader>
                 <CardTitle>
                   <div className="flex justify-around">
-                    <h1 className="mb-2"> Name</h1>
+                    <h1 className="mb-2">Techwave</h1>
                     <AiFillCheckCircle className=" text-green-900" />
                   </div>
                 </CardTitle>
                 <CardDescription>
-                  Apneck Is An eccomerce website
+                  Techwave is a digital site for teaching programming
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Image src={img2} className="h-48 w-96 mb-3 object-cover" alt={""} />
+                <Image src={img3} className="h-48 w-96 mb-3 object-cover" alt={""} />
                 <h1 className="text-xl ">Languages & Libraries</h1>
                 <div className="flex space-x-5 my-2 text-blue-600">
-                  <p>Next-Js</p>
                   <p>React</p>
-                  <p>Tailwind</p>
-                  <p>Mongo-Db</p>
+                  <p>Bootsrap-5</p>
+                  <p>React-router-dom</p>
+                  <p>React-icons</p>
                 </div>
               </CardContent>
               <CardFooter className="flex justify-around items-center">
-                <Link href={' https://apneck-eclarkhalid.netlify.app/'} target="_blank">
+                <Link href={' https://techwave-e1xg4qtvf-eclarkhalid.vercel.app/'} target="_blank">
                   <Button variant={"outline"}>
                     Live Demo
                   </Button>
                 </Link>
-                <Link href={'https://github.com/Eclarkhalid/APneck'} target="_blank">
+                <Link href={'https://github.com/Eclarkhalid/techwave'} target="_blank">
                   <Button variant={"outline"}>
                     Code
                   </Button>
                 </Link>
-                <Link href={'https://youtu.be/p53gC8PNsuo'} target="_blank">
+                <Link href={'https://www.youtube.com/@eclarkhalid/videos'} target="_blank">
                   <Button variant={"outline"}>
                     Video
                   </Button>
@@ -567,15 +560,15 @@ const Home = () => {
             <Card className=" w-[600px] p-4">
               <CardContent>
                 <h2 className="text-xl my-3">Email</h2>
-                <Input placeholder="Enter email"/>
+                <Input placeholder="Enter email" />
                 <h2 className="text-xl my-3">Message</h2>
-                <Textarea placeholder="Input your message"/>
+                <Textarea placeholder="Input your message" />
                 <Button className="my-3">Send</Button>
               </CardContent>
               <Separator />
               <CardFooter className="flex justify-around mt-4">
                 <h2>Send me an Email Instead</h2>
-                <a href="mailto:eclarkhalid@gmail.com"><AiFillMail className="text-2xl text-blue-700"/></a>
+                <a href="mailto:eclarkhalid@gmail.com"><AiFillMail className="text-2xl text-blue-700" /></a>
               </CardFooter>
             </Card>
           </div>
